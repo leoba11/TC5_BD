@@ -14,7 +14,7 @@
     </tr>
 
 <?php
-
+$contacts = $GLOBALS['db']->GetActiveRecords('eb50946_contacts');
 foreach ($contacts as $contact):
 
 ?>
