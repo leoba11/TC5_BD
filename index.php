@@ -3,7 +3,7 @@
 require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/vendor/adodb/adodb-php/adodb-active-record.inc.php';
 
-$db = NewADOConnection('postgres9://eb50946:eb50946.@localhost/ci0137');
+$db = NewADOConnection('postgres9://eb50946:eb50946@localhost/ci0137');
 $dictionary = NewDataDictionary($db);
 $dictionary->SetSchema('eb50946');
 $db->Execute('SET search_path TO eb50946');
