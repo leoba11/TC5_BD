@@ -4,7 +4,7 @@
  * Controlador de visitas
  *
  */
-class VisitasController extends Controller {
+class ContactosController extends Controller {
 	function index()
 	{
 	}
