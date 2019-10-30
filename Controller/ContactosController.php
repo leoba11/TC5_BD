@@ -19,7 +19,7 @@ class ContactosController extends Controller {
 	{
 		$contact = new ContactModel();
 		$contact->load('id='.intval($_GET['id']));
-		$contact->delete();
+		$contact->Delete();
 		//header('Location: index.php?action=index');
 	}
 }
