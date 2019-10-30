@@ -7,6 +7,8 @@
 class ContactosController extends Controller {
 	function index()
 	{
+		$contacts = $GLOBALS['db']->GetActiveRecords('eb50946_contacts');
+		$this->view->assign('contacts', $contacts);
 	}
 
 	function edit()
