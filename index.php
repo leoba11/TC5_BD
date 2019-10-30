@@ -8,7 +8,7 @@ $dictionary = NewDataDictionary($db);
 $dictionary->SetSchema('eb50946');
 $db->Execute('SET search_path TO eb50946');
 ADOdb_Active_Record::SetDatabaseAdapter($db);
-$db->debug = FALSE; // Si se cambia FALSE por TRUE se activa el despliegue de las consultas.
+$db->debug = TRUE; // Si se cambia FALSE por TRUE se activa el despliegue de las consultas.
 
 define('DS', DIRECTORY_SEPARATOR);
 define('TEMPLATE_DIR', 'View' . DS);
