@@ -22,9 +22,9 @@ foreach ($contacts as $contact):
       <td><?php echo $contact->name; ?></td>
       <td><?php echo $contact->last_name; ?></td>
       <td><?php echo $contact->home_telephone; ?></td>
-      <td>Casa 41, Calle de La Tristeza, Liliput</td>
-      <td>789-4651</td>
-      <td>Cueva de los 7 enanitos</td>
+      <td><?php echo $contact->home_address; ?></td>
+      <td><?php echo $contact->work_telephone; ?></td>
+      <td><?php echo $contact->work_address; ?></td>
       <td><a href="mailto:<?php echo $contact->email;?>"> <?php echo $contact->email;?> </a></td>
       <td><a href="<?php echo $_SERVER['PHP_SELF'];?>?id=<?php echo $contact->id;?>&amp;action=edit">Editar</a></td> 
       <td><a href="<?php echo $_SERVER['PHP_SELF'];?>?id=<?php echo $contact->id;?>&amp;action=delete" onclick="return confirm('¿Está Seguro?');">Borrar</a></td>  
