@@ -1,3 +1,9 @@
+<h2> CONTACTS</h2>
+<br>
+<br>
+<a href="<?php echo $_SERVER['PHP_SELF'];?>?action=create"> NEW CONTACT</a>
+<br><br>
+
 <table summary="Tabla de direcciones personales para contactos." border="1">
   <caption align="bottom">Direcciones Personales</caption>
   <tbody>
@@ -35,5 +41,3 @@
 
 </tbody>
 </table>
-<br>
-<a href="<?php echo $_SERVER['PHP_SELF'];?>?action=create"> NEW CONTACT</a>
