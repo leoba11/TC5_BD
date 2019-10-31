@@ -14,8 +14,7 @@
     </tr>
 
 <?php
-foreach ($contacts as $contact):
-
+  foreach ($contacts as $contact):
 ?>
 
     <tr>
@@ -27,11 +26,11 @@ foreach ($contacts as $contact):
       <td><?php echo $contact->work_address; ?></td>
       <td><a href="mailto:<?php echo $contact->email;?>"> <?php echo $contact->email;?> </a></td>
       <td><a href="<?php echo$_SERVER['PHP_SELF'];?>?id=<?php echo$contact->id;?>&amp;action=edit">Editar</a></td>
-			<td><a href="<?php echo$_SERVER['PHP_SELF'];?>?id=<?php echo$contact->id;?>&amp;action=delete">Borrar</a></td>  
+      <td><a href="<?php echo$_SERVER['PHP_SELF'];?>?id=<?php echo$contact->id;?>&amp;action=delete"onclick="return confirm('Are you sure?');">Borrar</a></td>  
     </tr>
 
 <?php
-endforeach;
+  endforeach;
 ?>
 
 </tbody>

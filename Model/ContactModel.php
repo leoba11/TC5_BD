@@ -8,12 +8,5 @@ class ContactModel extends ADODB_Active_Record {
 		$row = $GLOBALS['db']->GetRow("SELECT nextval('eb50946_contacts_id_seq'::regclass) AS id");
 		$this->id = $row['id'];
 	}
-
-	function edit() {
-
-	}
-
-	function delete() {
-		
-	}
+	
 }

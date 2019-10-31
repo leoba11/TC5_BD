@@ -15,22 +15,8 @@ class ContactosController extends Controller {
 	{
 	}
 
-	// function delete()
-	// {
-	// 	$contact = new ContactModel();
-	// 	$contact->load('id='.intval($_GET['id']));
-	// 	$contact->delete();
-	// 	header('Location: index.php?action=index');
-	// }
-
-	Function delete()
+	function delete()
 	{
-		$contact = new ContactModel();
-		$contact->load('id='.intval($_GET['id']));
-		$this->view->assign('contact', $contact);
-	}
-	
-	Function sure(){
 		$contact = new ContactModel();
 		$contact->load('id='.intval($_GET['id']));
 		$contact->delete();
