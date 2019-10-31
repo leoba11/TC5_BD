@@ -11,6 +11,25 @@ class ContactosController extends Controller {
 		$this->view->assign('contacts', $contacts);
 	}
 
+	function create()
+	{
+
+	}
+
+	function createSubmit()
+	{
+		$contact = new ContactModel();
+		$contact->name = $_POST['name'];
+		$contact->last_name = $_POST['last_name'];
+		$contact->home_telephone = $_POST['home_telephone'];
+		$contact->home_address = $_POST['home_address'];
+		$contact->work_telephone = $_POST['work_telephone'];
+		$contact->work_address = $_POST['work_address'];
+		$contact->email = $_POST['email'];
+		$contact->save();
+		header('Location: index.php?action=index');
+	}
+
 	function edit()
 	{
 		$contact = new ContactModel();

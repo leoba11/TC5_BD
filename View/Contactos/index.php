@@ -35,3 +35,5 @@
 
 </tbody>
 </table>
+<br>
+<a href="<?php echo $_SERVER['PHP_SELF'];?>?action=create"> NEW CONTACT</a>
