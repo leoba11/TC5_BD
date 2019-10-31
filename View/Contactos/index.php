@@ -25,8 +25,8 @@
       <td><?php echo $contact->work_telephone; ?></td>
       <td><?php echo $contact->work_address; ?></td>
       <td><a href="mailto:<?php echo $contact->email;?>"> <?php echo $contact->email;?> </a></td>
-      <td><a href="<?php echo$_SERVER['PHP_SELF'];?>?id=<?php echo$contact->id;?>&amp;action=edit">Editar</a></td>
-      <td><a href="<?php echo$_SERVER['PHP_SELF'];?>?id=<?php echo$contact->id;?>&amp;action=delete"onclick="return confirm('Are you sure?');">Borrar</a></td>  
+      <td><a href="<?php echo $_SERVER['PHP_SELF'];?>?id=<?php echo $contact->id;?>&amp;action=edit">Editar</a></td>
+      <td><a href="<?php echo $_SERVER['PHP_SELF'];?>?id=<?php echo $contact->id;?>&amp;action=delete" onclick="return confirm('SURE?');">Borrar</a></td>  
     </tr>
 
 <?php
